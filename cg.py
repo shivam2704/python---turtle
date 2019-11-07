@@ -1,7 +1,7 @@
 import turtle
 import math
 from random import randint
-import random
+import time
 
 turtle.up()
 turtle.goto(-200,-150)
@@ -28,7 +28,8 @@ turtle.write('g', font=('Monotype Corsiva',100,'italic'))
 turtle.goto(-120,0)
 turtle.color('#F0F0F0')
 turtle.begin_fill()
-
+time.sleep(1)
+turtle.speed(2)
 turtle.circle(40)
 turtle.end_fill()
 
@@ -63,7 +64,7 @@ while num_stars <200:
     y = randint(-150,250)
     draw_star(1)
     turtle.penup()
-    turtle.goto(x,y)
+    turtle.goto(x, y)
     turtle.pendown()
     num_stars +=1
     
